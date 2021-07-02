@@ -21,6 +21,7 @@ app.get('/weather',(req,res)=>{
     rq('https://api.openweathermap.org/data/2.5/weather?q=Indore&appid=0deae38ccac5032bbdf190e79c90ba7f'
     ).on('data',(chunk)=>{
         function timefilter(da) {
+            t=da
             p="AM"
             if (da>12){
                 t=da-12
