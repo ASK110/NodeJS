@@ -4,6 +4,7 @@ const fs = require("fs");
 const hbs = require("hbs")
 const rq = require("requests");
 const { Console } = require("console");
+const port = process.env.PORT || 8080;
 
 const staticPath = path.join(__dirname,'./static');
 console.log(path.join(__dirname,'./content'));
@@ -92,4 +93,4 @@ app.all('*',(req,res)=>{res.render('404')})
     //res.sendFile(path.join(staticPath,"/index.html"))
     //res.sendFile(path.resolve(__dirname,'./content/Home.css'))
 //})
-app.listen(8080)
+app.listen(port)
