@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="weather.css">
+    <title>WEATHER|ASK-Software</title>
+</head>
+<body>
+    {{>layout}}
+        <div class="box">
+        <h1>{{city}}|{{country}}</h1>
+        <h3>{{day}}|{{month}} {{date}}|{{time}}</h3>
+        <h1>{{temp}}</h1>
+        <h3>Min:{{mintemp}}|max:{{maxtemp}}</h3>
+        </div>
+    {{>footer}}
+</body>
+</html>
