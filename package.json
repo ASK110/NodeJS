@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start":"node index.js",
     "server": "nodemon index.js -e js,hbs,css"
   },
   "keywords": [],
